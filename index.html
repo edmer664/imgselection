@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Like A Lokal</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Jcrop -->
+  <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
+  <script src="https://unpkg.com/jcrop"></script>
+
+
+</head>
+
+<body>
+  <main class="py-2">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col">
+          <img src="./assets/magazine.jpg" id="target" alt="Selector" />
+        </div>
+  
+        
+      </div>
+      <div class="row py-2">
+
+        <div class="col">
+          <button type="button" class="btn btn-secondary" onclick="clearSelection()">Clear</button>
+        </div>
+      </div>
+      <div class="row py-2">
+        <div class="col">
+          <input type="text" id="link_input" placeholder="Link" class="form-control">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-success" onclick="addSelection()">Add</button>
+        </div>
+
+      </div>
+
+      <div class="row py-2">
+        <div class="col">
+          <button type="button" class="btn btn-primary" onclick="generate()">Generate</button>
+        </div>
+      </div>
+      
+      <div class="row py-2">
+        <div class="col" id="temp_links">
+          
+        </div>
+      </div>
+
+      <div class="row py-2">
+        <div id="output" class="col">
+
+        </div>
+        <map id="linkmap" name="links">
+
+        </map>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+  <script src="app.js" defer></script>
+
+</body>
+
+</html>
